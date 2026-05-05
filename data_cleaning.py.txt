@@ -1,0 +1,33 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import plotly.express as px
+
+df = pd.read_csv("ecom.csv")
+df.head()
+
+df.info()
+
+df.isnull().sum()
+
+df['Age'].fillna(df['Age'].mean(), inplace=True)
+.df.dropna(inplace=True)
+
+
+
+df.duplicated().sum()
+df.drop_duplicates(inplace=True).
+
+df.columns = df.columns.str.strip()
+df.columns = df.columns.str.lower()
+df.columns = df.columns.str.replace(" ", "_")
+
+df['transaction_date'] = pd.to_datetime(df['transaction_date'])
+df['purchase_amount'] = pd.to_numeric(df['purchase_amount'])
+df.describe()
+df['month'] = df['transaction_date'].dt.month
+df['year'] = df['transaction_date'].dt.year
+df.info()
+df.head()
+df.to_csv("clean_ecommerce_data.csv", index=False)
