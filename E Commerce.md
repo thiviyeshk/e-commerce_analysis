@@ -182,6 +182,17 @@ The dataset includes e-commerce transaction data such as:
 
 \* Supports data-driven decision making
 
+## 📸 Dashboard Preview
+
+![E-commerce Dashboard](ecommerce.png)
+![E-commerce Dashboard](ecommerce.mp4)
+
+---
+
+## 🎥 Demo Video
+
+[Watch Demo](ecommerce.mp4)
+
 
 
 ###### **How to Run**
